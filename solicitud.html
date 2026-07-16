@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud HTTP</title>
+    <link rel="stylesheet" href="estilos/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #3f4347 !important;
+            background: linear-gradient(180deg, #5b5d61 0%, #55595d 100%) fixed !important;
+        }
+        .card {
+            border: 1px solid rgba(53, 48, 48, 0.08) !important;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <script src="estilos/js/bootstrap.min.js"></script>
+
+    <header class="bg-dark text-white py-4 shadow-sm">
+        <div class="container text-center">
+            <h1 class="display-5 fw-bold">SIMULADOR EDUCATIVO DEL FUNCIONAMIENTO WEB</h1>
+            <p class="lead mb-0 text-secondary">El mundo de HTML5 y sus funciones</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top shadow-sm">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1 fs-6 text-warning">Menú</span>
+            <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-outline-light btn-sm" href="index.html">Inicio</a>
+                <a class="btn btn-outline-light btn-sm active" href="solicitud.html" target="_blank">Solicitud HTML</a>
+                <a class="btn btn-outline-light btn-sm" href="servidor.html" target="_blank">Servidor WEB</a>
+                <a class="btn btn-outline-light btn-sm" href="renderizadorespuesta.html" target="_blank">Renderizado y HTML5</a>
+                <a class="btn btn-outline-light btn-sm" href="ejemplo.html" target="_blank">Ejemplo prárctico</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5 flex-grow-1">
+
+        <section class="p-5 mb-5 bg-white rounded-3 shadow-sm border">
+            <h2 class="border-bottom pb-3 mb-4 text-primary">Solicitud HTTP: Métodos GET y POST</h2>
+
+            <div class="row align-items-center g-4">
+                <p class="fs-5 text-muted lh-base">
+                    Son los principales verbos del protocolo HTTP utilizados para transferir datos entre el cliente y el servidor.
+                </p>
+                <p class="text-secondary">
+                    Cuando realizas una búsqueda, por ejemplo en Google, utilizas el método <strong>GET</strong>. Verás que tus términos de búsqueda viajan adjuntos directamente en el enlace y se reflejan en la barra de direcciones de tu navegador. Por otro lado, cuando envías un formulario con información delicada, usas <strong>POST</strong> para que los datos viajen ocultos en el cuerpo de la petición.
+                </p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="img/Métodos.png" alt="Métodos GET y POST" class="img-fluid rounded shadow-sm border" style="max-width: 85%;">
+            </div>
+        </section>
+
+        <div class="row g-4 mb-5">
+            <div class="col-12">
+                <div class="card shadow-sm border-0">
+                    <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+                        <h3 class="h5 mb-0">Tabla Comparativa de Métodos</h3>
+                        <span class="badge bg-warning text-dark">Protocolo HTTP</span>
+                    </div>
+                    <div class="card p-0">
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped mb-0 align-middle">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th class="ps-4" style="width: 20%;">Métodos</th>
+                                        <th style="width: 40%;">Descripción</th>
+                                        <th class="pe-4" style="width: 40%;">Cuándo se usa</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="ps-4 fw-bold text-primary">GET</td>
+                                        <td>Representación de un recurso (petición de lectura). Los parámetros son visibles en la URL.</td>
+                                        <td class="pe-4 text-secondary" >Recuperar datos de solo lectura, búsquedas y navegación general.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ps-4 fw-bold text-success">POST</td>
+                                        <td>Envío de datos al servidor de forma segura en el cuerpo del mensaje. No se muestran en la URL.</td>
+                                        <td class="pe-4 text-secondary">Enviar datos confidenciales, iniciar sesión, crear o modificar recursos.</td> 
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-center py-3 mt-auto border-top border-secondary">
+        <p class="mb-0 text-white">&copy; 2026 | Autor: <strong class="text-white">Lenin Vicente</strong></p>
+    </footer>
+</body>
+</html>

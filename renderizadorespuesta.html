@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respuesta y Renderizado HTML5</title>
+    <link rel="stylesheet" href="estilos/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #3f4347 !important;
+            background: linear-gradient(180deg, #5b5d61 0%, #55595d 100%) fixed !important;
+        }
+        .card {
+            border: 1px solid rgba(53, 48, 48, 0.08) !important;
+        }
+        code {
+            color: #20c997;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <script src="estilos/js/bootstrap.min.js"></script>
+
+    <header class="bg-dark text-white py-4 shadow-sm">
+        <div class="container text-center">
+            <h1 class="display-5 fw-bold">SIMULADOR EDUCATIVO DEL FUNCIONAMIENTO WEB</h1>
+            <p class="lead mb-0 text-secondary">El mundo de HTML5 y sus funciones</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top shadow-sm">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1 fs-6 text-warning">Menú</span>
+            <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-outline-light btn-sm" href="index.html">Inicio</a>
+                <a class="btn btn-outline-light btn-sm" href="solicitud.html" target="_blank">Solicitud HTTP</a>
+                <a class="btn btn-outline-light btn-sm" href="servidor.html" target="_blank">Servidor WEB</a>
+                <a class="btn btn-outline-light btn-sm active" href="renderizadorespuesta.html" target="_blank">Renderizado y HTML5</a>
+                <a class="btn btn-outline-light btn-sm" href="ejemplo.html" target="_blank">Ejemplo Práctico</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5 flex-grow-1">
+
+        <section class="p-5 mb-5 bg-white rounded-3 shadow-sm border">
+            <h2 class="border-bottom pb-3 mb-4 text-primary">Respuesta y Renderizado HTML5</h2>
+
+            <div class="row align-items-center g-4">
+                <div class="col-md-5 text-center">
+                    <img src="img/etiquetas.jpg" alt="Estructura Semántica de Etiquetas" class="img-fluid rounded shadow-sm border" style="max-width: 90%;">
+                </div>
+                <div class="col-md-7">
+                    <h3 class="h4 text-dark mb-3">Etiquetas Semánticas</h3>
+                    <p class="fs-5 text-muted lh-base">
+                        Son elementos en HTML5 que describen claramente el significado de su contenido, facilitando la interpretación tanto para el navegador como para el desarrollador.
+                    </p>
+                    <p class="text-secondary">
+                        Hoy en día, representan un estándar obligatorio para crear sitios web profesionales. Ayudan a los motores de búsqueda (SEO) a comprender la estructura y relevancia del contenido, además de ser vitales para la accesibilidad, permitiendo que las tecnologías de asistencia para personas con discapacidad lean el sitio de forma adecuada.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="row g-4 mb-5">
+            <div class="col-12">
+                <div class="card shadow-sm border-0">
+                    <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+                        <h3 class="h5 mb-0">Lista de elementos semánticos de uso común</h3>
+                        <span class="badge bg-success">HTML5 Estándar</span>
+                    </div>
+                    <div class="card-body bg-light">
+                        <div class="row g-3">
+                            
+                            <div class="col-md-6 col-lg-4">
+                                <div class="p-3 bg-white rounded border h-100">
+                                    <h5 class="mb-2"><code>&lt;header&gt;</code></h5>
+                                    <p class="text-secondary small mb-0">Contenedor para el contenido inicial de presentación, logotipos o el conjunto de enlaces de navegación principal.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="p-3 bg-white rounded border h-100">
+                                    <h5 class="mb-2"><code>&lt;nav&gt;</code></h5>
+                                    <p class="text-secondary small mb-0">Define un bloque o sección especial destinado exclusivamente a contener enlaces de navegación interna o externa.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="p-3 bg-white rounded border h-100">
+                                    <h5 class="mb-2"><code>&lt;main&gt;</code></h5>
+                                    <p class="text-secondary small mb-0">Engloba el contenido principal, único e importante de la página web. No debe repetirse en otros archivos.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="p-3 bg-white rounded border h-100">
+                                    <h5 class="mb-2"><code>&lt;section&gt;</code></h5>
+                                    <p class="text-secondary small mb-0">Agrupa fragmentos de contenido que están estrechamente relacionados en un mismo tema.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="p-3 bg-white rounded border h-100">
+                                    <h5 class="mb-2"><code>&lt;article&gt;</code></h5>
+                                    <p class="text-secondary small mb-0">Se utiliza para bloques de contenido independientes o autónomos (como noticias, posts de blogs o comentarios).</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="p-3 bg-white rounded border h-100">
+                                    <h5 class="mb-2"><code>&lt;aside&gt;</code></h5>
+                                    <p class="text-secondary small mb-0">Define secciones laterales que contienen información secundaria o complementaria respecto al flujo central.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="p-3 bg-white rounded border">
+                                    <h5><code>&lt;footer&gt;</code></h5>
+                                    <p class="text-secondary small mb-0">Pie de página del documento. Ideal para información del autor, avisos legales, enlaces de contacto y derechos de autor.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="card shadow-sm border-0 bg-white">
+                    <div class="card-body">
+                        <div class="row g-3 align-items-center text-center text-md-start">
+                            <div class="col-md-8">
+                                <h4 class="h6 text-muted uppercase fw-bold mb-1">Guía Adicional de Referencia</h4>
+                                <p class="text-secondary small mb-0">Aprende más sobre las mejores prácticas utilizando elementos semánticos para maquetación avanzada.</p>
+                            </div>
+                            <div class="col-md-4 text-md-end">
+                                <a href="https://mailchimp.com/es/resources/html-semantic-elements-and-webflow-the-essential-guide/" target="_blank" class="btn btn-outline-secondary w-100">Leer la Guía Semántica</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-center py-3 mt-auto border-top border-secondary">
+        <p class="mb-0 text-white-50">&copy; 2026 | Autor: <strong class="text-white">Lenin Vicente</strong></p>
+    </footer>
+</body>
+</html>

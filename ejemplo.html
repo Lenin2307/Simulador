@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo práctico: Mini página renderizada</title>
+    <link rel="stylesheet" href="estilos/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #3f4347 !important;
+            background: linear-gradient(180deg, #5b5d61 0%, #55595d 100%) fixed !important;
+        }
+        .card {
+            border: 1px solid rgba(53, 48, 48, 0.08) !important;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <script src="estilos/js/bootstrap.min.js"></script>
+
+    <header class="bg-dark text-white py-4 shadow-sm">
+        <div class="container text-center">
+            <h1 class="display-5 fw-bold">SIMULADOR EDUCATIVO DEL FUNCIONAMIENTO WEB</h1>
+            <p class="lead mb-0 text-secondary">El mundo de HTML5 y sus funciones</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top shadow-sm">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1 fs-6 text-warning">Menú</span>
+            <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-outline-light btn-sm" href="index.html">Inicio</a>
+                <a class="btn btn-outline-light btn-sm" href="solicitud.html" target="_blank">Solicitud HTTP</a>
+                <a class="btn btn-outline-light btn-sm" href="servidor.html" target="_blank">Servidor WEB</a>
+                <a class="btn btn-outline-light btn-sm" href="renderizadorespuesta.html" target="_blank">Renderizado y HTML5</a>
+                <a class="btn btn-outline-light btn-sm active" href="ejemplo.html" target="_blank">Ejemplo Práctico</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5 flex-grow-1">
+        <section class="p-5 mb-5 bg-white rounded-3 shadow-sm border">
+            <h2 class="border-bottom pb-3 mb-4 text-primary">Ejemplo Práctico: Mini página renderizada</h2>
+
+            <div class="row align-items-center g-4">
+                <div class="col-md-4 text-center">
+                    <img src="img/buenaspracticas.jpg" alt="Buenas prácticas de desarrollo" class="img-fluid rounded shadow-sm border" style="max-width: 85%;">
+                </div>
+                <div class="col-md-8">
+                    <h3 class="h4 text-dark mb-3">¿Para qué sirve HTML?</h3>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item d-flex align-items-start px-0 bg-transparent">
+                            <span class="badge bg-primary rounded-pill me-2 mt-1">&check;</span>
+                            <div><strong>Estructura el contenido:</strong> organiza de forma jerárquica textos, imágenes, videos y tablas.</div>
+                        </li>
+                        <li class="list-group-item d-flex align-items-start px-0 bg-transparent">
+                            <span class="badge bg-primary rounded-pill me-2 mt-1">&check;</span>
+                            <div><strong>Crea hipervínculos:</strong> conecta e interconecta de manera directa distintos documentos en la red.</div>
+                        </li>
+                        <li class="list-group-item d-flex align-items-start px-0 bg-transparent">
+                            <span class="badge bg-primary rounded-pill me-2 mt-1">&check;</span>
+                            <div><strong>No es programación:</strong> no gestiona estructuras lógicas complejas ni cálculos matemáticos; es interpretado por el navegador.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="h4 text-dark mb-3">Definición de HTML5</h3>
+                    <p class="text-secondary lh-base">
+                        HTML (Lenguaje de Marcas de Hipertexto, del inglés <em>HyperText Markup Language</em>) es el componente más básico de la Web. Define el significado y la estructura del contenido web. Junto con HTML, usualmente se utilizan otras dos tecnologías fundamentales: <strong>CSS</strong> para el aspecto y diseño visual, y <strong>JavaScript</strong> para programar la interactividad y funcionalidad dinámica.
+                    </p>
+                    <p class="text-secondary lh-base mb-0">
+                        El término "Hipertexto" hace referencia directa a los enlaces que vinculan páginas web entre sí. Al subir contenidos nuevos a Internet y conectarlos con los recursos creados por otros desarrolladores, te conviertes de manera activa en parte de la red informática mundial.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="row g-4 mb-5">
+
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+                        <h3 class="h5 mb-0">Tecnologías del Navegador</h3>
+                        <span class="badge bg-primary">Cliente</span>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped mb-0 align-middle">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th class="ps-4" style="width: 30%;">Lenguaje</th>
+                                        <th class="pe-4" style="width: 70%;">Propósito principal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="ps-4 fw-bold text-primary">HTML</td>
+                                        <td class="pe-4">Estructura y semántica de los elementos de la página.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ps-4 fw-bold text-success">CSS</td>
+                                        <td class="pe-4">Estilo visual, colores, tipografías y diseño adaptativo.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ps-4 fw-bold text-warning">JavaScript</td>
+                                        <td class="pe-4">Lógica de programación, interactividad dinámica y control de eventos.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-header bg-success text-white">
+                        <h3 class="h5 mb-0">Formulario Práctico de Registro</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="#" method="post">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label fw-semibold">Nombre completo</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej. Lenin Vicente">
+                            </div>
+                            <div class="mb-3">
+                                <label for="correo" class="form-label fw-semibold">Correo electrónico</label>
+                                <input type="email" class="form-control" id="correo" name="usuario" placeholder="Ej. lxvicente@utpl.edu.ec">
+                            </div>
+                            <div class="mb-3">
+                                <!-- Corrección: Modificado de Correo Electrónico a Ciudad de acuerdo al campo real -->
+                                <label for="ciudad" class="form-label fw-semibold">Ciudad</label>
+                                <input type="text" class="form-control" id="ciudad" name="ciudad" placeholder="Ej. Loja">
+                            </div>
+                            <button type="submit" class="btn btn-success btn-sm w-100">Registrar datos de prueba</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-center py-3 mt-auto border-top border-secondary">
+        <p class="mb-0 text-white-50">&copy; 2026 | Autor: <strong class="text-white">Lenin Vicente</strong></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador</title>
+    <link rel="stylesheet" href="estilos/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #3f4347 !important;
+            background: linear-gradient(180deg, #5b5d61 0%, #55595d 100%) fixed !important;
+        }
+        .card {
+            border: 1px solid rgba(53, 48, 48, 0.08) !important;
+        }
+        .btn-whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: #FFF !important;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.btn-whatsapp:hover {
+    background-color: #20ba5a;
+    transform: scale(1.1);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+}
+    </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <script src="estilos/js/bootstrap.min.js"></script>
+
+    <header class="bg-dark text-white py-4 shadow-sm">
+        <div class="container text-center">
+            <h1 class="display-5 fw-bold">SIMULADOR EDUCATIVO DEL FUNCIONAMIENTO WEB</h1>
+            <p class="lead mb-0 text-secondary">El mundo de HTML5 y sus funciones</p>
+        </div>
+    </header>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top shadow-sm">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1 fs-6 text-warning">Menú</span>
+            <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-outline-light btn-sm active" href="index.html">Inicio</a>
+                <a class="btn btn-outline-light btn-sm" href="solicitud.html" target="_blank">Solicitud HTTP</a>
+                <a class="btn btn-outline-light btn-sm" href="servidor.html" target="_blank">Servidor WEB</a>
+                <a class="btn btn-outline-light btn-sm" href="renderizadorespuesta.html" target="_blank">Renderizado y HTML5</a>
+                <a class="btn btn-outline-light btn-sm" href="ejemplo.html" target="_blank">Ejemplo Práctico</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5 flex-grow-1">
+        <section class="p-5 mb-5 bg-white rounded-3 shadow-sm border">
+            <h2 class="border-bottom pb-3 mb-4 text-primary">Inicio: ¿Qué ocurre al ingresar una URL?</h2>
+
+            <div class="row align-items-center g-4">
+                <div class="col-md-5 text-center">
+                    <img src="img/url.jpg" alt="URL" class="img-fluid rounded shadow-sm border">
+                </div>
+                <div class=" col-md-7">
+                    <p class="fs-5 text-muted lh-base">
+                        Cuando un usuario busca o escribe una dirección web (URL) en el navegador, empieza un proceso de comunicación entre cliente y servidor.   
+                    </p>
+                    <p class="text-secondary">
+                        Es una dirección única que se utiliza para encontrar un recurso específico en la red de Internet; el navegador hace una consulta al sistema de Nombres de Dominio (DNS) para convertirla en el nombre de la página. Luego establece la conexión segura y el servidor la procesa y devuelve los archivos correspondientes.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="row g-4 mb-5">
+            
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="h5 mb-0">Pasos Iniciales</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-center">
+                                <span class="badge bg-primary rounded-pill me-3">1</span>
+                                Usuario escribe una URL en la barra
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <span class="badge bg-primary rounded-pill me-3">2</span>
+                                El navegador identifica el sitio mediante DNS
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <span class="badge bg-primary rounded-pill me-3">3</span>
+                                Se prepara y envía una solicitud HTTP
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>  
+        <div class="col-md-6">
+
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-header bg-success text-white">
+                    <h3 class="h5 mb-0">Formulario de pruebas</h3>
+                </div>
+                <div class="card-body">
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label fw-semibold">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ej. Lenin Vicente">
+                        </div>
+                        <div class="mb-3">
+                            <label for="correo" class="form-label fw-semibold">Correo electrónico</label>
+                            <input type="email" class="form-control" id="correo" placeholder="Ej. lxvicente@utpl.edu.ec">
+                        </div>
+                        <button type="submit" class="btn btn-success btn-sm w-100">Probar enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+                    <h3 class="h5 mb-0">Listado de inscritos</h3>
+                    <span class="badge bg-light text-dark">Simulación</span>
+                </div>
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-hover table-striped mb-0 align-middle">
+                            <thead class="table-light">
+                                <tr>
+                                    <th class="ps-4">Id</th>
+                                    <th>Nombre</th>
+                                    <th class="pe-4"Edad (años)></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="ps-4 fw-bold text-primary">01</td>
+                                    <td>Lenin Vicente</td>
+                                    <td class="pe-4">29</td>
+                                </tr>
+                                <tr>
+                                    <td class="ps-4 fw-bold text-primary">02</td>
+                                    <td>Yury Lopez</td>
+                                    <td class="pe-4">35</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="card shadow-sm border-0 bg-white">
+                <div class="card-body">
+                    <div class="row g-3 text-center">
+                        <div class="col-md-4">
+                            <h4 class="h6 text-muted uppercase fw-bold">Enlace externo</h4>
+                            <a href="https://www.utpl.edu.ec/" target="_blank" class="btn btn-outline-secondary w-100">Visitar pagina UTPL</a>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="text-muted uppercase fw-bold">Recurso interno</h4>
+                            <a href="img/logohtml.jpg" target="_blank" class="btn btn-outline-secondary w-100">Ver logo HTML</a>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="h6 text-muted uppercase fw-bold">Rutas relativas</h4>
+                            <div class="btn-group w-100" role="group">
+                                <a href="descripción/codigo.html" target="_blank" class="btn btn-sm btn-outline-dark">Código</a>
+                                <a href="capturas.html" target="_blank" class="btn btn-sm btn-outline-dark">Capturas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-dark text-center py-3 mt-auto border-top border-secondary">
+            <p class="mb-0 text-white">&copy; 2026 | Autor: <strong class="text-white">Lenin Vicente</strong></p>
+    </footer>
+<a href="https://wa.me/0958605082?text=Hola,%20tengo%20una%20pregunta%20sobre%20el%20Simulador%20Educativo" class="btn-whatsapp" target="_blank" rel="noopener noreferrer" title="Escríbenos por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+</body>
+</html>    

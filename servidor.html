@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidor web</title>
+    <link rel="stylesheet" href="estilos/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #3f4347 !important;
+            background: linear-gradient(180deg, #5b5d61 0%, #55595d 100%) fixed !important;
+        }
+        .card {
+            border: 1px solid rgba(53, 48, 48, 0.08) !important;
+        }
+        code {
+            color: #e83e8c;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <script src="estilos/js/bootstrap.min.js"></script>
+
+    <header class="bg-dark text-white py-4 shadow-sm">
+        <div class="container text-center">
+            <h1 class="display-5 fw-bold">SIMULADOR EDUCATIVO DEL FUNCIONAMIENTO WEB</h1>
+            <p class="lead mb-0 text-secondary">El mundo de HTML5 y sus funciones</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top shadow-sm">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1 fs-6 text-warning">Menú</span>
+            <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-outline-light btn-sm" href="index.html">Inicio</a>
+                <a class="btn btn-outline-light btn-sm" href="solicitud.html" target="_blank">Solicitud HTTP</a>
+                <a class="btn btn-outline-light btn-sm active" href="servidor.html" target="_blank">Servidor WEB</a>
+                <a class="btn btn-outline-light btn-sm" href="renderizadorespuesta.html" target="_blank">Renderizado y HTML5</a>
+                <a class="btn btn-outline-light btn-sm" href="ejemplo.html" target="_blank">Ejemplo Práctico</a>
+            </div>
+        </div>  
+    </nav>
+
+    <main class="container my-5 flex-grow-1">
+
+        <section class="p-5 mb-5 bg-white rounded-3 shadow-sm border">
+            <h2 class="border-bottom pb-3 mb-4 text-primary">Servidor Web: Procesamiento</h2>
+
+            <div class="row align-items-center g-4">
+                <div class="col-md-7">
+                    <p class="fs-5 text-muted lh-base">
+                        Es el conjunto de operaciones que se ejecutan en la máquina central (servidor) al recibir una solicitud HTTP de un usuario.
+                    </p>
+                    <p class="text-secondary">
+                        El servidor HTTP analiza la URL solicitada y determina si el recurso es estático (como una imagen) o dinámico. Si la página es dinámica, el servidor interactúa con lenguajes de backend para ejecutar operaciones lógicas, validaciones de seguridad y consultas a bases de datos con el fin de generar el contenido antes de enviarlo de vuelta al navegador.
+                    </p>
+                </div>
+                <div class="col-md-5 text-center">
+                    <img src="img/Procesamiento.jpg" alt="Flujo cliente/servidor" class="img-fluid rounded shadow-sm border" style="max-width: 90%;">
+                </div>
+            </div>
+        </section>
+        
+        <div class="row g-4 mb-5">
+            <div class="col-12">
+                <div class="card shadow-sm border-0">
+                    <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+                        <h3 class="h5 mb-0">Cabeceras (Headers) HTTP Comunes</h3>
+                        <span class="badge bg-warning text-dark">Metadata de Red</span>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="list-group list-group-flush">
+                            <div class="list-group-item p-4">
+                                <h5 class="mb-1"><code>User-Agent</code></h5>
+                                <p class="text-secondary mb-0">Identifica de forma clara el navegador, el sistema operativo o el cliente de software que está realizando la solicitud web.</p>
+                            </div>
+                            <div class="list-group-item p-4">
+                                <h5 class="mb-1"><code>Accept</code></h5>
+                                <p class="text-secondary mb-0">Indica al servidor cuáles formatos de contenido (JSON, HTML, imágenes, etc.) es capaz de procesar y entender el cliente en la respuesta.</p>
+                            </div>
+                            <div class="list-group-item p-4">
+                                <h5 class="mb-1"><code>Content-Type</code></h5>
+                                <p class="text-secondary mb-0">Determina el formato o tipo de medio MIME exacto del cuerpo del mensaje (por ejemplo, <code>text/html</code> o <code>application/json</code>).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-center py-3 mt-auto border-top border-secondary">
+        <p class="mb-0 text-white">&copy; 2026 | Autor: <strong class="text-white">Lenin Vicente</strong></p>
+    </footer>
+</body>
+</html>
